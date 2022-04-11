@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width , initial-scale=1.0">
+    <title> Uniformwork Technology </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="web.html"><img src="png/UniLogo.png"></a>
+            <div class="nav-links" id=navLinks>
+                <i class="fa fa-times" id="mySidebar" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="web.html">COMPANY</a></li>
+                    <li><a href="product.html">PRODUCT</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="training.html">TRAINING</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Uniformwork Technology </h1>
+            <p>
+                To provide formwork system service to residential
+                & commercial construction industries.
+            </p>
+            <a href="intro.html" class="hero-btn"> Visit Us To Know More</a>
+        </div>
+
+        <a href="career.html">
+            <button type="button" class="join-us-now">Join Us Now !</button>
+        </a>
+    </section>
+
+    <!------slogan------>
+    <section class="slogan">
+        <h1> We Are In </h1>
+        <table class="slogan-col">
+            <tr>
+                <td>
+                    <img src="png/budget.png" style="width: 50px">
+                    <h3>Budget Than Others</h3> <!---png/profit.png--->
+                </td>
+                <td>
+                    <img src="png/quality.png" style="width: 50px">
+                    <h3>Reusable & Recycle</h3> <!---png/ecology.png--->
+                </td>
+                <td>
+                    <img src="png/speed.png" style="width: 50px">
+                    <h3>Speedy Construction</h3> <!---png/time.png--->
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-----Unistore------>
+    <section class="accessory">
+        <h1>ACCESSORIES</h1>
+        <a href="accessories.html" class="hero-btn">Visit Us</a>
+    </section>
+
+    <!-----featured------->
+    <section class="featured">
+        <h1>Our Features</h1>
+        <p>New Release & Product</p>
+        <div class="row">
+            <div class="featured-col">
+                <img src="png/Iconic Skies.jpg">
+                <h3>Iconic Skies</h3>
+                <p>nmdjsfvjdsfkdfksfkdf</p>
+            </div>
+            <div class="featured-col">
+                <img src="png/THE RISE.jpg">
+                <h3>The RISE</h3>
+                <p>nmdjsfvjdsfkdfksfkdf</p>
+            </div>
+            <div class="featured-col">
+                <img src="png/THE MARIN.jpg">
+                <h3>The MARIN</h3>
+                <p>nmdjsfvjdsfkdfksfkdf</p>
+            </div>
+        </div>
+    </section>
+
+    <!-----ContactUs------>
+    <section class="contact">
+        <h1>Call Us To Get More Information</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-----Footer------>
+    <section class="footer">
+        <div class="container">
+            <h4>About Us</h4>
+        </div>
+        <p>Uni Formwork Technology Sdn. Bhd. was incorporated on July
+            2011. Uni Formwork has provided formwork system services <br>to
+            residential & commercial construction industries.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/Uni-Formwork-Technology-Sdn-Bhd-103553224522912/"><i
+                    class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/uni_formwork_technology/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCoojICf0uQG5pkv-sB_PqXg"><i class="fa fa-youtube"></i></a>
+            <a
+                href="https://www.google.com/search?q=uniformwork+technology+sdn+bhd&oq=unifor&aqs=chrome.0.69i59j69i57j0i512l4j69i60l2.4694j0j7&sourceid=chrome&ie=UTF-8"><i
+                    class="fa fa-google"></i></a>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" font-size="18px">&#8593;</button>
+
+    <!------- js scroll to top ------>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!------JavaScript for toogle Menu ------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+            /*document.getElementById("mySidebar").style.display = "block";*/
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+            /*document.getElementById("mySidebar").style.display = "none";*/
+        }
+    </script>
+</body>
+
+</html>
